@@ -1,0 +1,5 @@
+map_name: Chess
+games:
+- game_name: Chess
+  file_name: Chess_1.1.xml
+version: 0

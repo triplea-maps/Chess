@@ -1,0 +1,473 @@
+<?xml version="1.0" ?>
+<!DOCTYPE game SYSTEM "game.dtd">
+<game>
+        <info name="Chess" version="1.1"/>
+        <loader javaClass="games.strategy.triplea.TripleA"/>
+        <map>
+                <!-- Territory Definitions -->
+                <territory name="1-5" water="true"/>
+                <territory name="0-2" water="true"/>
+                <territory name="0-1" water="true"/>
+                <territory name="1-4" water="true"/>
+                <territory name="1-7" water="true"/>
+                <territory name="0-4" water="true"/>
+                <territory name="1-6" water="true"/>
+                <territory name="0-3" water="true"/>
+                <territory name="0-0" water="true"/>
+                <territory name="0-6" water="true"/>
+                <territory name="1-1" water="true"/>
+                <territory name="0-5" water="true"/>
+                <territory name="1-0" water="true"/>
+                <territory name="1-3" water="true"/>
+                <territory name="0-7" water="true"/>
+                <territory name="1-2" water="true"/>
+                <territory name="2-6" water="true"/>
+                <territory name="3-1" water="true"/>
+                <territory name="3-0" water="true"/>
+                <territory name="2-5" water="true"/>
+                <territory name="2-4" water="true"/>
+                <territory name="2-3" water="true"/>
+                <territory name="2-7" water="true"/>
+                <territory name="3-7" water="true"/>
+                <territory name="3-6" water="true"/>
+                <territory name="2-2" water="true"/>
+                <territory name="3-5" water="true"/>
+                <territory name="2-1" water="true"/>
+                <territory name="3-4" water="true"/>
+                <territory name="2-0" water="true"/>
+                <territory name="3-3" water="true"/>
+                <territory name="3-2" water="true"/>
+                <territory name="5-4" water="true"/>
+                <territory name="5-5" water="true"/>
+                <territory name="5-6" water="true"/>
+                <territory name="5-7" water="true"/>
+                <territory name="5-0" water="true"/>
+                <territory name="5-1" water="true"/>
+                <territory name="7-7" water="true"/>
+                <territory name="5-2" water="true"/>
+                <territory name="7-6" water="true"/>
+                <territory name="4-0" water="true"/>
+                <territory name="5-3" water="true"/>
+                <territory name="4-1" water="true"/>
+                <territory name="4-2" water="true"/>
+                <territory name="4-3" water="true"/>
+                <territory name="6-7" water="true"/>
+                <territory name="4-4" water="true"/>
+                <territory name="4-5" water="true"/>
+                <territory name="4-6" water="true"/>
+                <territory name="4-7" water="true"/>
+                <territory name="6-0" water="true"/>
+                <territory name="6-1" water="true"/>
+                <territory name="6-2" water="true"/>
+                <territory name="6-3" water="true"/>
+                <territory name="6-4" water="true"/>
+                <territory name="6-5" water="true"/>
+                <territory name="6-6" water="true"/>
+                <territory name="7-2" water="true"/>
+                <territory name="7-3" water="true"/>
+                <territory name="7-4" water="true"/>
+                <territory name="7-5" water="true"/>
+                <territory name="7-0" water="true"/>
+                <territory name="7-1" water="true"/>
+
+                <!-- Territory Connections -->
+                <connection t1="1-5" t2="1-4"/>
+                <connection t1="1-5" t2="2-4"/>
+                <connection t1="1-5" t2="0-6"/>
+                <connection t1="0-2" t2="0-3"/>
+                <connection t1="0-2" t2="1-3"/>
+                <connection t1="0-1" t2="0-2"/>
+                <connection t1="0-1" t2="1-1"/>
+                <connection t1="0-1" t2="1-2"/>
+                <connection t1="1-4" t2="1-3"/>
+                <connection t1="1-4" t2="0-3"/>
+                <connection t1="1-4" t2="0-5"/>
+                <connection t1="1-7" t2="1-6"/>
+                <connection t1="1-7" t2="2-6"/>
+                <connection t1="0-4" t2="1-4"/>
+                <connection t1="0-4" t2="0-5"/>
+                <connection t1="0-4" t2="1-5"/>
+                <connection t1="1-6" t2="1-5"/>
+                <connection t1="1-6" t2="2-5"/>
+                <connection t1="0-3" t2="1-3"/>
+                <connection t1="0-3" t2="0-4"/>
+                <connection t1="0-0" t2="0-1"/>
+                <connection t1="0-0" t2="1-0"/>
+                <connection t1="0-0" t2="1-1"/>
+                <connection t1="0-6" t2="1-6"/>
+                <connection t1="0-6" t2="0-7"/>
+                <connection t1="0-6" t2="1-7"/>
+                <connection t1="1-1" t2="1-2"/>
+                <connection t1="1-1" t2="0-2"/>
+                <connection t1="0-5" t2="1-5"/>
+                <connection t1="0-5" t2="0-6"/>
+                <connection t1="0-5" t2="1-6"/>
+                <connection t1="1-0" t2="1-1"/>
+                <connection t1="1-0" t2="2-1"/>
+                <connection t1="1-0" t2="0-1"/>
+                <connection t1="1-3" t2="1-2"/>
+                <connection t1="1-3" t2="0-4"/>
+                <connection t1="0-7" t2="1-7"/>
+                <connection t1="0-7" t2="1-6"/>
+                <connection t1="1-2" t2="0-2"/>
+                <connection t1="1-2" t2="2-2"/>
+                <connection t1="1-2" t2="2-3"/>
+                <connection t1="1-2" t2="0-3"/>
+                <connection t1="2-6" t2="2-5"/>
+                <connection t1="2-6" t2="1-6"/>
+                <connection t1="2-6" t2="2-7"/>
+                <connection t1="2-6" t2="1-5"/>
+                <connection t1="3-1" t2="3-2"/>
+                <connection t1="3-1" t2="2-2"/>
+                <connection t1="3-0" t2="4-0"/>
+                <connection t1="3-0" t2="3-1"/>
+                <connection t1="3-0" t2="4-1"/>
+                <connection t1="3-0" t2="2-1"/>
+                <connection t1="2-5" t2="1-5"/>
+                <connection t1="2-5" t2="2-4"/>
+                <connection t1="2-5" t2="3-5"/>
+                <connection t1="2-5" t2="3-4"/>
+                <connection t1="2-5" t2="1-4"/>
+                <connection t1="2-5" t2="3-6"/>
+                <connection t1="2-4" t2="1-4"/>
+                <connection t1="2-4" t2="3-4"/>
+                <connection t1="2-4" t2="1-3"/>
+                <connection t1="2-4" t2="3-5"/>
+                <connection t1="2-3" t2="1-3"/>
+                <connection t1="2-3" t2="2-4"/>
+                <connection t1="2-3" t2="3-3"/>
+                <connection t1="2-3" t2="1-4"/>
+                <connection t1="2-7" t2="1-7"/>
+                <connection t1="2-7" t2="3-7"/>
+                <connection t1="2-7" t2="1-6"/>
+                <connection t1="3-7" t2="4-7"/>
+                <connection t1="3-7" t2="2-6"/>
+                <connection t1="3-7" t2="4-6"/>
+                <connection t1="3-6" t2="2-6"/>
+                <connection t1="3-6" t2="3-7"/>
+                <connection t1="3-6" t2="4-5"/>
+                <connection t1="3-6" t2="2-7"/>
+                <connection t1="2-2" t2="2-1"/>
+                <connection t1="2-2" t2="2-3"/>
+                <connection t1="2-2" t2="1-1"/>
+                <connection t1="2-2" t2="3-3"/>
+                <connection t1="2-2" t2="1-3"/>
+                <connection t1="3-5" t2="3-4"/>
+                <connection t1="3-5" t2="3-6"/>
+                <connection t1="3-5" t2="4-5"/>
+                <connection t1="3-5" t2="4-4"/>
+                <connection t1="3-5" t2="2-6"/>
+                <connection t1="2-1" t2="1-1"/>
+                <connection t1="2-1" t2="3-1"/>
+                <connection t1="2-1" t2="1-2"/>
+                <connection t1="3-4" t2="2-3"/>
+                <connection t1="2-0" t2="1-1"/>
+                <connection t1="2-0" t2="3-1"/>
+                <connection t1="2-0" t2="3-0"/>
+                <connection t1="2-0" t2="2-1"/>
+                <connection t1="2-0" t2="1-0"/>
+                <connection t1="3-3" t2="3-2"/>
+                <connection t1="3-3" t2="3-4"/>
+                <connection t1="3-3" t2="4-3"/>
+                <connection t1="3-3" t2="2-4"/>
+                <connection t1="3-2" t2="4-2"/>
+                <connection t1="3-2" t2="2-2"/>
+                <connection t1="3-2" t2="2-1"/>
+                <connection t1="3-2" t2="4-3"/>
+                <connection t1="3-2" t2="2-3"/>
+                <connection t1="5-4" t2="5-3"/>
+                <connection t1="5-4" t2="5-5"/>
+                <connection t1="5-4" t2="4-3"/>
+                <connection t1="5-4" t2="4-5"/>
+                <connection t1="5-5" t2="4-5"/>
+                <connection t1="5-5" t2="5-6"/>
+                <connection t1="5-5" t2="6-5"/>
+                <connection t1="5-5" t2="6-4"/>
+                <connection t1="5-5" t2="4-6"/>
+                <connection t1="5-6" t2="4-6"/>
+                <connection t1="5-6" t2="6-5"/>
+                <connection t1="5-6" t2="4-7"/>
+                <connection t1="5-7" t2="5-6"/>
+                <connection t1="5-7" t2="6-7"/>
+                <connection t1="5-7" t2="6-6"/>
+                <connection t1="5-0" t2="6-0"/>
+                <connection t1="5-0" t2="6-1"/>
+                <connection t1="5-0" t2="4-1"/>
+                <connection t1="5-1" t2="5-0"/>
+                <connection t1="5-1" t2="6-1"/>
+                <connection t1="5-1" t2="6-2"/>
+                <connection t1="5-1" t2="4-2"/>
+                <connection t1="7-7" t2="6-7"/>
+                <connection t1="5-2" t2="5-1"/>
+                <connection t1="5-2" t2="6-2"/>
+                <connection t1="5-2" t2="4-2"/>
+                <connection t1="5-2" t2="5-3"/>
+                <connection t1="5-2" t2="6-3"/>
+                <connection t1="5-2" t2="4-3"/>
+                <connection t1="7-6" t2="7-5"/>
+                <connection t1="7-6" t2="7-7"/>
+                <connection t1="7-6" t2="6-7"/>
+                <connection t1="4-0" t2="5-0"/>
+                <connection t1="4-0" t2="4-1"/>
+                <connection t1="4-0" t2="5-1"/>
+                <connection t1="4-0" t2="3-1"/>
+                <connection t1="5-3" t2="4-3"/>
+                <connection t1="5-3" t2="6-3"/>
+                <connection t1="5-3" t2="4-4"/>
+                <connection t1="4-1" t2="3-1"/>
+                <connection t1="4-1" t2="5-1"/>
+                <connection t1="4-1" t2="5-2"/>
+                <connection t1="4-1" t2="3-2"/>
+                <connection t1="4-2" t2="4-1"/>
+                <connection t1="4-2" t2="3-1"/>
+                <connection t1="4-2" t2="5-3"/>
+                <connection t1="4-2" t2="3-3"/>
+                <connection t1="4-3" t2="4-2"/>
+                <connection t1="4-3" t2="4-4"/>
+                <connection t1="4-3" t2="3-4"/>
+                <connection t1="6-7" t2="6-6"/>
+                <connection t1="6-7" t2="5-6"/>
+                <connection t1="4-4" t2="3-4"/>
+                <connection t1="4-4" t2="5-4"/>
+                <connection t1="4-4" t2="3-3"/>
+                <connection t1="4-4" t2="5-5"/>
+                <connection t1="4-5" t2="4-4"/>
+                <connection t1="4-5" t2="4-6"/>
+                <connection t1="4-5" t2="3-4"/>
+                <connection t1="4-5" t2="5-6"/>
+                <connection t1="4-6" t2="3-6"/>
+                <connection t1="4-6" t2="3-5"/>
+                <connection t1="4-6" t2="5-7"/>
+                <connection t1="4-7" t2="4-6"/>
+                <connection t1="4-7" t2="5-7"/>
+                <connection t1="4-7" t2="3-6"/>
+                <connection t1="6-0" t2="7-0"/>
+                <connection t1="6-0" t2="6-1"/>
+                <connection t1="6-0" t2="7-1"/>
+                <connection t1="6-0" t2="5-1"/>
+                <connection t1="6-1" t2="6-2"/>
+                <connection t1="6-1" t2="7-1"/>
+                <connection t1="6-1" t2="7-2"/>
+                <connection t1="6-1" t2="5-2"/>
+                <connection t1="6-2" t2="7-3"/>
+                <connection t1="6-2" t2="5-3"/>
+                <connection t1="6-3" t2="6-2"/>
+                <connection t1="6-3" t2="7-3"/>
+                <connection t1="6-3" t2="7-4"/>
+                <connection t1="6-3" t2="5-4"/>
+                <connection t1="6-4" t2="6-3"/>
+                <connection t1="6-4" t2="5-4"/>
+                <connection t1="6-4" t2="5-3"/>
+                <connection t1="6-4" t2="7-5"/>
+                <connection t1="6-5" t2="6-4"/>
+                <connection t1="6-5" t2="6-6"/>
+                <connection t1="6-5" t2="5-4"/>
+                <connection t1="6-5" t2="7-6"/>
+                <connection t1="6-6" t2="7-6"/>
+                <connection t1="6-6" t2="5-6"/>
+                <connection t1="6-6" t2="5-5"/>
+                <connection t1="6-6" t2="7-7"/>
+                <connection t1="7-2" t2="6-2"/>
+                <connection t1="7-2" t2="6-3"/>
+                <connection t1="7-3" t2="7-2"/>
+                <connection t1="7-3" t2="7-4"/>
+                <connection t1="7-3" t2="6-4"/>
+                <connection t1="7-4" t2="6-4"/>
+                <connection t1="7-4" t2="7-5"/>
+                <connection t1="7-4" t2="6-5"/>
+                <connection t1="7-5" t2="6-5"/>
+                <connection t1="7-5" t2="6-6"/>
+                <connection t1="7-0" t2="7-1"/>
+                <connection t1="7-0" t2="6-1"/>
+                <connection t1="7-1" t2="7-2"/>
+                <connection t1="7-1" t2="6-2"/>
+        </map>
+        <resourceList>
+                <resource name="techTokens"/>
+                <resource name="PUs"/>
+        </resourceList>
+        <playerList>
+                <!-- In turn order -->
+                <player name="Black" optional="false"/>
+                <player name="White" optional="false"/>
+
+                <alliance player="Black" alliance="Black"/>
+                <alliance player="White" alliance="White"/>
+        </playerList>
+        <unitList>
+                <unit name="Pawn"/>
+                <unit name="Castle"/>
+                <unit name="Horse"/>
+                <unit name="Bishop"/>
+                <unit name="Queen"/>
+                <unit name="King"/>
+        </unitList>
+        <gamePlay>
+                <delegate name="initDelegate" javaClass="games.strategy.triplea.delegate.InitializationDelegate" display="Initializing Delegates"/>
+                <delegate name="purchase" javaClass="games.strategy.triplea.delegate.PurchaseDelegate" display="Purchase Units"/>
+                <delegate name="move" javaClass="games.strategy.triplea.delegate.MoveDelegate" display="Combat Move"/>
+                <delegate name="battle" javaClass="games.strategy.triplea.delegate.BattleDelegate" display="Combat"/>
+                <delegate name="place" javaClass="games.strategy.triplea.delegate.PlaceDelegate" display="Place Units"/>
+                <delegate name="endTurn" javaClass="games.strategy.triplea.delegate.EndTurnDelegate" display="Turn Complete"/>
+                <delegate name="endRound" javaClass="games.strategy.triplea.delegate.EndRoundDelegate" display="Round Complete"/>
+                <sequence>
+                        <step name="gameInitDelegate" delegate="initDelegate" maxRunCount="1"/>
+                        <step name="blackPurchase" delegate="purchase" player="Black"/>
+                        <step name="blackCombatMove" delegate="move" player="Black"/>
+                        <step name="blackBattle" delegate="battle" player="Black"/>
+                        <step name="blackPlace" delegate="place" player="Black"/>
+                        <step name="blackEndTurn" delegate="endTurn" player="Black"/>
+                        <step name="whitePurchase" delegate="purchase" player="White"/>
+                        <step name="whiteCombatMove" delegate="move" player="White"/>
+                        <step name="whiteBattle" delegate="battle" player="White"/>
+                        <step name="blackNonCombatMove" delegate="move" player="Black" display="Non Combat (Movement Reset Phase)"/>
+                        <step name="whiteNonCombatMove" delegate="move" player="White" display="Non Combat (Movement Reset Phase)"/>
+                        <step name="whitePlace" delegate="place" player="White"/>
+                        <step name="whiteEndTurn" delegate="endTurn" player="White"/>
+                        <step name="endRoundStep" delegate="endRound"/>
+                </sequence>
+        </gamePlay>
+        <production>
+                <!-- Unit Production Cost -->
+                <productionRule name="buyPawn">
+                        <cost resource="PUs" quantity="1"/>
+                        <result resourceOrUnit="Pawn" quantity="1"/>
+                </productionRule>
+                <productionRule name="buyCastle">
+                        <cost resource="PUs" quantity="2"/>
+                        <result resourceOrUnit="Castle" quantity="1"/>
+                </productionRule>
+                <productionRule name="buyHorse">
+                        <cost resource="PUs" quantity="3"/>
+                        <result resourceOrUnit="Horse" quantity="1"/>
+                </productionRule>
+                <productionRule name="buyBishop">
+                        <cost resource="PUs" quantity="4"/>
+                        <result resourceOrUnit="Bishop" quantity="1"/>
+                </productionRule>
+                <productionRule name="buyQueen">
+                        <cost resource="PUs" quantity="5"/>
+                        <result resourceOrUnit="Queen" quantity="1"/>
+                </productionRule>
+                <productionRule name="buyKing">
+                        <cost resource="PUs" quantity="6"/>
+                        <result resourceOrUnit="King" quantity="1"/>
+                </productionRule>
+                <productionFrontier name="BlackFrontier">
+                        <frontierRules name="buyPawn"/>
+                        <frontierRules name="buyCastle"/>
+                        <frontierRules name="buyHorse"/>
+                        <frontierRules name="buyBishop"/>
+                        <frontierRules name="buyQueen"/>
+                        <frontierRules name="buyKing"/>
+                </productionFrontier>
+                <productionFrontier name="WhiteFrontier">
+                        <frontierRules name="buyPawn"/>
+                        <frontierRules name="buyCastle"/>
+                        <frontierRules name="buyHorse"/>
+                        <frontierRules name="buyBishop"/>
+                        <frontierRules name="buyQueen"/>
+                        <frontierRules name="buyKing"/>
+                </productionFrontier>
+                <playerProduction player="Black" frontier="BlackFrontier"/>
+                <playerProduction player="White" frontier="WhiteFrontier"/>
+        </production>
+        <attachmentList>
+                    <attachment name="unitAttachment" attachTo="Pawn" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="1"/>
+                         <option name="attack" value="6"/>
+                         <option name="defense" value="0"/>
+                         <option name="isSea" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Castle" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="7"/>
+                         <option name="attack" value="6"/>
+                         <option name="defense" value="0"/>
+                         <option name="isSea" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Horse" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="3"/>
+                         <option name="attack" value="6"/>
+                         <option name="defense" value="0"/>
+                         <option name="isSea" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Bishop" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="7"/>
+                         <option name="attack" value="6"/>
+                         <option name="defense" value="0"/>
+                         <option name="isSea" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="Queen" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="7"/>
+                         <option name="attack" value="6"/>
+                         <option name="defense" value="0"/>
+                         <option name="isSea" value="true"/>
+                    </attachment>
+                    <attachment name="unitAttachment" attachTo="King" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                         <option name="movement" value="1"/>
+                         <option name="attack" value="6"/>
+                         <option name="defense" value="0"/>
+                         <option name="isSea" value="true"/>
+                    </attachment>
+                    <attachment name="territoryAttachment" attachTo="0-7" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="capital" value="Black"/>
+                   </attachment>
+                    <attachment name="territoryAttachment" attachTo="7-0" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="0"/>
+                        <option name="capital" value="White"/>
+                   </attachment>
+        </attachmentList>
+        <initialize>
+                <ownerInitialize>
+                        <territoryOwner territory="0-7" owner="Black"/>
+                        <territoryOwner territory="7-0" owner="White"/>
+                </ownerInitialize>
+                <unitInitialize>
+                        <unitPlacement unitType="Pawn" territory="1-5" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Bishop" territory="0-2" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Horse" territory="0-1" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-4" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-7" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="King" territory="0-4" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-6" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Queen" territory="0-3" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Castle" territory="0-0" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Horse" territory="0-6" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-1" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Bishop" territory="0-5" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-0" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-3" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Castle" territory="0-7" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Pawn" territory="1-2" quantity="1" owner="Black"/>
+                        <unitPlacement unitType="Castle" territory="7-7" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Horse" territory="7-6" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-7" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-0" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-1" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-2" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-3" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-4" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-5" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Pawn" territory="6-6" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Bishop" territory="7-2" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Queen" territory="7-3" quantity="1" owner="White"/>
+                        <unitPlacement unitType="King" territory="7-4" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Bishop" territory="7-5" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Castle" territory="7-0" quantity="1" owner="White"/>
+                        <unitPlacement unitType="Horse" territory="7-1" quantity="1" owner="White"/>
+                </unitInitialize>
+                <resourceInitialize>
+                        <resourceGiven player="Black" resource="PUs" quantity="0"/>
+                        <resourceGiven player="White" resource="PUs" quantity="0"/>
+                </resourceInitialize>
+        </initialize>
+        <propertyList>
+                <property name="mapName" value="Chess" editable="false"/>
+                <property name="notes">
+                        <value>
+                        <![CDATA[Chess - TripleA Edition - 1.1 Beta]]>
+                        </value>
+                </property>
+        </propertyList>
+</game>
